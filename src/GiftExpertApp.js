@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import AddCategory from './Components/AddCategory';
 import GifGrid from './Components/GifGrid';
 
-const GifExpertApp = () => {
+const GifExpertApp = ({defaultCategory = []}) => {
     //const categories = ['OnePunch', 'Samurai X', 'Naruto'];
-    const [categories, setCategories] = useState(['OnePunch']);
+    //const [categories, setCategories] = useState(['OnePunch']);
+    const [categories, setCategories] = useState(defaultCategory);
     /*const handleAdd = () => {
         //para actualizar el estado de un array, va entre corchetes
         //setCategories([...categories,'Dragon ball Z']);
